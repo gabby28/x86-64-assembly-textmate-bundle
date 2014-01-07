@@ -35,13 +35,13 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(dword|qword|tword|db|dw|dd|dq|dt|do|dy|resb|resw|resd|resq|rest|reso|resy|incbin|equ|times)\b</string>
+			<string>(?i)\b(qword|dword|word|db|dw|dd|dq|dt|do|dy|resb|resw|resd|resq|rest|reso|resy|incbin|equ|times)\b</string>
 			<key>name</key>
 			<string>support.type.asm</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\.(data|bss|text)$</string>
+			<string>\b(rax|r0|eax|r0d|ax|r0w|ah|al|r0b|rcx|r1|ecx|r1d|cx|r1w|ch|cl|r1b|rdx|r2|edx|r2d|dx|r2w|dh|dl|r2b|rbx|r3|ebx|r3d|bx|r3w|bh|bl|r3b|rsp|r4|esp|r4d|sp|r4w|spl|r4b|rbp|r5|ebp|r5d|bp|r5w|bpl|r5b|rsi|r6|esi|r6d|si|r6w|sil|r6b|rdi|r7|edi|r7d|di|r7w|dil|r7b|r8|r8d|r8w|r8b|r9|r9d|r9w|r9b|r10|r10d|r10w|r10b|r11|r11d|r11w|r11b|r12|r12d|r12w|r12b|r13|r13d|r13w|r13b|r14|r14d|r14w|r14b|r15|r15d|r15w|r15b|rip|eip|ip|xmm0|ymm0|zmm0|xmm1|ymm1|zmm1|xmm2|ymm2|zmm2|xmm3|ymm3|zmm3|xmm4|ymm4|zmm4|xmm5|ymm5|zmm5|xmm6|ymm6|zmm6|xmm7|ymm7|zmm7|xmm8|ymm8|zmm8|xmm9|ymm9|zmm9|xmm10|ymm10|zmm10|xmm11|ymm11|zmm11|xmm12|ymm12|zmm12|xmm13|ymm13|zmm13|xmm14|ymm14|zmm14|xmm15|ymm15|zmm15|zmm16|zmm17|zmm18|zmm19|zmm20|zmm21|zmm22|zmm23|zmm24|zmm25|zmm26|zmm27|zmm28|zmm29|zmm30|zmm31|cs|ds|ss|es|fs|gs|msw|cr0|cr2|cr3|cr4|xcr0)\b</string>
 			<key>name</key>
 			<string>string.section</string>
 		</dict>
@@ -269,12 +269,6 @@
 			<string>^\.?(globl|global)\b</string>
 			<key>name</key>
 			<string>entity.directive</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>\b%?(rax|r0|eax|r0d|ax|r0w|ah|al|r0b|rcx|r1|ecx|r1d|cx|r1w|ch|cl|r1b|rdx|r2|edx|r2d|dx|r2w|dh|dl|r2b|rbx|r3|ebx|r3d|bx|r3w|bh|bl|r3b|rsp|r4|esp|r4d|sp|r4w|spl|r4b|rbp|r5|ebp|r5d|bp|r5w|bpl|r5b|rsi|r6|esi|r6d|si|r6w|sil|r6b|rdi|r7|edi|r7d|di|r7w|dil|r7b|r8|r8d|r8w|r8b|r9|r9d|r9w|r9b|r10|r10d|r10w|r10b|r11|r11d|r11w|r11b|r12|r12d|r12w|r12b|r13|r13d|r13w|r13b|r14|r14d|r14w|r14b|r15|r15d|r15w|r15b|rip|eip|ip|xmm0|ymm0|zmm0|xmm1|ymm1|zmm1|xmm2|ymm2|zmm2|xmm3|ymm3|zmm3|xmm4|ymm4|zmm4|xmm5|ymm5|zmm5|xmm6|ymm6|zmm6|xmm7|ymm7|zmm7|xmm8|ymm8|zmm8|xmm9|ymm9|zmm9|xmm10|ymm10|zmm10|xmm11|ymm11|zmm11|xmm12|ymm12|zmm12|xmm13|ymm13|zmm13|xmm14|ymm14|zmm14|xmm15|ymm15|zmm15|zmm16|zmm17|zmm18|zmm19|zmm20|zmm21|zmm22|zmm23|zmm24|zmm25|zmm26|zmm27|zmm28|zmm29|zmm30|zmm31|cs|ds|ss|es|fs|gs|msw|cr0|cr2|cr3|cr4|xcr0)+\b</string>
-			<key>name</key>
-			<string>storage.register</string>
 		</dict>
 	</array>
 	<key>scopeName</key>
